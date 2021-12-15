@@ -1,0 +1,30 @@
+from django.db import models
+
+class PropertyDetails(models.Model):
+    First_Image = models.ImageField(upload_to = 'Images',default='null')
+    Second_Image = models.ImageField(upload_to = 'Images',default='null')
+    Third_Image = models.ImageField(upload_to = 'Images',default='null')
+    Fourth_Image = models.ImageField(upload_to = 'Images',default='null')
+    Fifth_Image = models.ImageField(upload_to = 'Images',default='null')
+    Sixth_Image = models.ImageField(upload_to = 'Images',default='null')
+    Property_Short_Name = models.TextField(max_length=300)
+    Property_Full_Name = models.TextField(max_length=1000)
+    Property_Short_address = models.TextField(max_length=1500)
+    Property_Full_Address = models.TextField(max_length=2500)
+    Property_Type_Place = models.TextField(max_length=300)
+    Property_bedrooms = models.IntegerField()
+    Property_Bathrooms = models.IntegerField()
+    Property_Max_Occupancy = models.IntegerField()
+    Property_About_Text = models.TextField(max_length=10000)
+    Property_City = models.TextField(max_length=100)
+    Property_Area = models.TextField(max_length=1000)
+    Property_State = models.TextField(max_length=200)
+    Property_PricePer_Night = models.IntegerField()
+    Property_Price_At_Weekend = models.IntegerField()
+    Minimum_length_to_stay = models.IntegerField()
+    Property_ID = models.IntegerField()
+    Property_Size = models.IntegerField()
+    CheckIn_Hour = models.TimeField()
+    CheckOut_Hour = models.TimeField()
+     
+    
